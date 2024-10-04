@@ -10,6 +10,8 @@ import Footer from "../components/footer"
 
 function App() {
   
+  console.log('API Key in production:', import.meta.env.VITE_API_KEY)
+
   //define o news como uma lista de "Article"
   const [news, setNews] = useState<Article[]>([])
 
